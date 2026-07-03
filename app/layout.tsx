@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "내 성격에 딱 맞는 IT 부캐 찾기 | IT 부캐 MBTI 테스트",
   description:
-    "출근길 내 모습으로 알아보는 'IT 부캐' 테스트. 8개의 질문으로 나에게 딱 맞는 IT 직장인 페르소나를 찾아보세요.",
+    "퇴근길 내 모습으로 알아보는 'IT 부캐' 테스트. 8개의 질문으로 나에게 딱 맞는 IT 직장인 페르소나를 찾아보세요.",
   openGraph: {
     title: "내 성격에 딱 맞는 IT 부캐 찾기",
     description:

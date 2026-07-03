@@ -22,7 +22,7 @@ export default function HomePage() {
           style={{ animationDelay: "80ms", animationFillMode: "backwards" }}
         >
           <h1 className="text-3xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-4xl">
-            출근길 내 모습으로 알아보는
+            퇴근길 내 모습으로 알아보는
             <br />
             <span className="text-gradient-brand">&apos;IT 부캐&apos;</span> 테스트
           </h1>
