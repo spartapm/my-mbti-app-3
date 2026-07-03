@@ -19,8 +19,8 @@ npm run dev
 
 ## Supabase 설정
 
-1. `.env.local` 에 프로젝트 URL과 anon(publishable) key가 이미 설정되어 있습니다.
-2. Supabase 대시보드 → SQL Editor에서 [`database/schema.sql`](./database/schema.sql) 내용을 실행해 `mbti_results` 테이블과 RLS 정책을 생성하세요.
+1. 프로젝트 URL과 publishable key는 별도 `.env` 파일 없이 [`lib/supabase.ts`](./lib/supabase.ts)에 직접 하드코딩되어 있습니다.
+2. Supabase 대시보드 → SQL Editor에서 [`database/schema.sql`](./database/schema.sql) 내용을 실행해 `mbti_results` 테이블과 RLS 정책을 생성하세요. (테이블을 생성하기 전에는 참여자 수 카운터가 기본값으로만 표시됩니다.)
 
 ## 폴더 구조
 

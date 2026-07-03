@@ -1,14 +1,9 @@
 import { createClient } from "@supabase/supabase-js";
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+// docs/supabase-info.md 에 기재된 프로젝트 자격 증명 (publishable key는 RLS로 보호되는 공개 키입니다)
+const SUPABASE_URL = "https://bqsatdrelqzlwchkzruy.supabase.co";
+const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_b_0WRiL78ORqgVnvAJ1IFw_R85-GK-3";
 
-if (!supabaseUrl || !supabaseAnonKey) {
-  throw new Error(
-    "Supabase 환경변수가 설정되지 않았습니다. .env.local의 NEXT_PUBLIC_SUPABASE_URL / NEXT_PUBLIC_SUPABASE_ANON_KEY를 확인해주세요."
-  );
-}
-
-export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+export const supabase = createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
 
 export const RESULTS_TABLE = "mbti_results";
